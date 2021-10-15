@@ -1,0 +1,94 @@
+Researcher: Eduardo Augusto Nivinski
+Profile: 
+Link for download data: 
+Research all info access: https://worldhappiness.report/ed/2021/#appendices-and-data
+Statistical Appendix: 
+Report Link: https://happiness-report.s3.amazonaws.com/2021/WHR+21.pdf
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+DATA LABELS:
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+Ladder score:
+
+Standard error of ladder score:
+ 
+upperwhisker:
+ 
+lowerwhisker:
+ 
+Logged GDP per capita:
+ 
+Social support:
+ 
+Healthy life expectancy:
+ 
+Freedom to make life choices:
+ 
+Generosity:
+ 
+Perceptions of corruption:
+ 
+Ladder score in Dystopia:
+ 
+Explained by: Log GDP per capita:
+ 
+Explained by: Social support:
+ 
+Explained by: Healthy life expectancy:
+ 
+Explained by: Freedom to make life choices:
+ 
+Explained by: Generosity:
+ 
+Explained by: Perceptions of corruption:
+ 
+Dystopia + residual:
+ 
+
+--------------------------------------------------------------------
+CONTEXTO
+
+O Relatório de Felicidade Mundial pode ser um ponto de pesquisa de interesse 
+sobre o estado de bem-aventurança mundial. O relatório primário foi distribuído 
+em 2012, o segundo em 2013, o terceiro em 2015 e o quarto na atualização de 2016. 
+O World Joy 2017, que posiciona 155 nações por seus níveis de felicidade, foi 
+lançado nos Países Unidos em uma ocasião que celebra o Dia Universal da Alegria na 
+Caminhada 20. O relatório continua obtendo reconhecimento mundial à medida que governos,
+organizações e sociedade respeitosa progressivamente utilizam indicadores de alegria 
+para educar suas escolhas de formulação de políticas. Dirigir especialistas em áreas - 
+questões financeiras, pesquisa do cérebro, investigação geral, percepções nacionais, 
+bem-estar, abordagem aberta e muito mais - descreve como as estimativas de bem-estar 
+podem ser usadas de forma eficaz para avaliar o avanço dos países.
+
+--------------------------------------------------------------------
+CONTEUDO
+
+As pontuações e classificações de alegria utilizam informações do Gallup 
+World Survey. As pontuações são baseadas nas respostas à maioria dos endereços 
+de avaliação de vida questionados na pesquisa. Este endereço, conhecido como passo 
+Cantril, pede aos entrevistados que pensem em um passo com a vida concebível mais 
+excelente para eles sendo um 10 e a vida concebível mais extremamente ruim sendo 
+um e para classificar suas vidas atuais nessa escala. As pontuações são de testes 
+de agente amplamente para o longo período de 2013-2016 e utilizam os pesos Gallup 
+para criar o agente de medidores. As colunas que seguem a pontuação de bem-aventurança 
+avaliam o grau em que cada uma das seis variáveis ​​- geração financeira, retorno social, expectativa de vida, flexibilidade, não comparecimento à degradação e liberalidade - 
+contribui para tornar as avaliações de vida mais altas em cada nação do que na Distopia, 
+uma nação teórica que tem valores elevados para os menos pontos médios nacionais do mundo 
+para cada uma das seis variáveis. Eles não afetam a pontuação completa detalhada para cada 
+nação, mas eles exp.
+
+Este arquivo contém a Pontuação de Felicidade para 153 países, juntamente com os fatores 
+usados ​​para explicar a pontuação.
+
+O Happiness Score é uma média nacional das respostas à principal pergunta de avaliação de 
+vida feita na Gallup World Poll (GWP), que usa o Cantril Ladder.
+
+O Índice de Felicidade é explicado pelos seguintes fatores:
+
+PIB per capita
+Expectativa de Vida Saudável
+Apoio social
+Liberdade para fazer escolhas de vida
+Generosidade
+Corrupção Percepção
+Erro residual
