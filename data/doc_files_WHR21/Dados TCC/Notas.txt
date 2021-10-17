@@ -1,5 +1,0 @@
-DataPanelWHR2021 possui dados comparados ano a ano. O problema é que os dados de 2020 são diferentes dos dados apresentados no DataWHR2021, que na teoria, deveriam ser os mesmos dados mas isolados apenas para o ano de 2021 de cada país. 
-
-Além disso, para os dados de 2020, DataPanel tem mais dados ausentes e países não respondentes. Eles mencionam mesmo que alguns países não responderam e para isso, tiveram que usar de iterpolação e extrapolação para completar os dados. Apesar disso, o rank de felicidade não é medido pela correlação dos dados ausentes ou inputados.
-
-Se for fazer uma análise separada, vale usar o dados DataWHR2021 mesmo. No Kaggle tem os dados de ano a ano separados e com as correções estatíticas propostas, então eles na teoria são comparáveis entre si e melhor que o DataPanel para essa finalidade, pois eles tem correção e estão completos, sem dados ausentes. Aí é confiar na metodologia aplicada hehe

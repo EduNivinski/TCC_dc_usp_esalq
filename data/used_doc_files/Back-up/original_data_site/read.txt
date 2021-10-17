@@ -1,0 +1,12 @@
+Dados baixados diretamente do site worldhappiness resposável pela coleta dos dados e pesquisa
+
+links:
+https://worldhappiness.report/ed/2015/#appendices-and-data
+https://worldhappiness.report/ed/2016/#appendices-and-data
+https://worldhappiness.report/ed/2017/#appendices-and-data
+https://worldhappiness.report/ed/2018/#appendices-and-data
+https://worldhappiness.report/ed/2019/#appendices-and-data
+https://worldhappiness.report/ed/2020/#appendices-and-data
+https://worldhappiness.report/ed/2021/#appendices-and-data
+
+lembrando que o nome de cada arquivo se refere ao ano de lançamento da pesquisa. Os dados internos são sempre do ano anterior
