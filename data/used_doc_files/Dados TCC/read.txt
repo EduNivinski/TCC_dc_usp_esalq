@@ -15,6 +15,11 @@ https://worldhappiness.report/ed/2021/#appendices-and-data
 
 3- O DB que usa dados mistos com outros anos está muito incompleto. Optei por usar o DB de cada ano que possui a correção estatística da Wordgappiness
 
+4 - Foram usados os dados de 2015 até 2020 e apenas países que participaram das pesquisas em todos os anos foram usados. Foram assim excluídos os seguinte países (20 total): 
 
+Angola; Belize; Bhutan; Central African Republic; Comoros; Congo (Kinshasa); Gambia; Laos; Lesotho; Maldives; Mozambique; Puerto Rico; Qatar;
+Somalia; Somaliland region; Sudan; Suriname; Swaziland; Syria; Trinidad & Tobago
+
+inserir: 
 
 
