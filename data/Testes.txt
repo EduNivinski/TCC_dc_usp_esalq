@@ -1,0 +1,4 @@
+Poderia rodar uma regressão multipla para cada ano para primeiro enxergar os dados,
+verificar como a variável dependente 'felicidade" se correlaciona em cada ano com as
+demais variáveis.
+
