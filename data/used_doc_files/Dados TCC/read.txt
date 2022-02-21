@@ -9,6 +9,10 @@ https://worldhappiness.report/ed/2019/#appendices-and-data
 https://worldhappiness.report/ed/2020/#appendices-and-data
 https://worldhappiness.report/ed/2021/#appendices-and-data
 
+Data Sources and Variable Definitions:
+https://happiness-report.s3.amazonaws.com/2021/Appendix1WHR2021C2.pdf
+https://happiness-report.s3.amazonaws.com/2021/Appendix2WHR2021C2.pdf
+
 1- lembrando que o nome de cada arquivo se refere ao ano de lançamento da pesquisa. Os dados internos são sempre do ano anterior.
 
 2 - O kaggle possui banco de dados dos mesmos anos, mas apresenta certas inconsistências e por isso decidi buscar diretamente da fonte
