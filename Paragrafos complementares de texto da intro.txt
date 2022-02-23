@@ -1,0 +1,10 @@
+Ambos os índices quando comparados ao ladder são interessantes pois proporcionam uma analise de quanto a avaliação subjetiva do bem-estar de cada pessoa se relaciona de fato com as estatísticas econômicas e saúde, comumente atreladas à qualidade de vida dos países.  
+
+
+pretende-se analisar o comportamento da variável bem-estar (que parte da percepção de indivíduos da sua realidade) com dados de desempenho econômico e de expectativa de vida (que na teoria refletem a qualidade de vida média dos indivíduos em determinado local, independente da percepção deles). 
+
+ Entende-se como bem-estar a percepção subjetiva de como cada pessoa será capaz de traduzir a sua realidade e definir assim a sua qualidade de vida a depender do seu contexto e do momento específico. Ou seja, a interpretação do bem-estar advinda de cada indivíduo pode mudar
+
+, dentro do espaço que ocupa, experiências que compartilha, informações que tem acesso e outras variáveis da vida cotidiana,. Dado que o contexto e o momento é o conjunto de variáveis sociais, políticas, econômicas e de saúde que compõem o momento específico de cada pessoa. Assim senso, será que os aspectos sociais, políticos, econômicos e de saúde surtiram algum efeito na construção psicológica do bem-estar de cada pessoa durante a pandemia? Será que esses efeitos mudam significativamente a depender do contexto geográfico dos indivíduos?
+
+Para ajudar na análise das questões levantadas, A WHR conduziu ano após ano uma série de pesquisas em diversos países a respeito de como aspectos políticos, econômicos e sociais definiam a percepção de bem-estar das pessoas. Através desse projeto foi possível gerar uma estatística dessa percepção do bem-estar, ou ledder-score.
