@@ -1,3 +1,15 @@
 
 Nível de pobreza no Brasil em 2020 - CNN:
 https://www.cnnbrasil.com.br/business/mesmo-com-auxilio-um-quarto-dos-brasileiros-vivia-na-pobreza-em-2020-diz-ibge/#:~:text=Segundo%20o%20instituto%2C%20a%20popula%C3%A7%C3%A3o,maiores%20patamares%20da%20s%C3%A9rie%20hist%C3%B3rica.
+
+venda de anti depressivos:
+https://www.cnnbrasil.com.br/saude/venda-de-antidepressivos-cresce-17-durante-pandemia-no-brasil/#:~:text=mostra%20que%20quase%20100%20milh%C3%B5es,aumento%20do%20consumo%20de%20medicamentos.
+
+Mental Health and the Covid-19 Pandemic:
+https://www.nejm.org/doi/full/10.1056/nejmp2008017
+
+Onde foram adquiridos os dados originais?
+
+Dados usados para análise de 2015 a 2020
+Obs: os dados de 2021 compilam as infos de 2020 e dos anos anteriores de cada país
+https://happiness-report.s3.amazonaws.com/2021/DataPanelWHR2021C2.xls
