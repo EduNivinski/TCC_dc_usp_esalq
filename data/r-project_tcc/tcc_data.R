@@ -62,3 +62,11 @@ db_all <- db_all[-(6:10)]
 test_db <- db_all
 test_db
 
+# Testes estatísticos
+
+# há correlação entre o bem-estar das pessoas e as variáveis de qualidade 
+# econômica e de saúde de cada país?
+
+
+
+
