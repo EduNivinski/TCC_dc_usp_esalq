@@ -163,7 +163,7 @@ estudante_escola %>%
                 full_width = F,
                 font_size = 25)
 
-#Exploração visual do desempenho médio
+#Exploração visual do ledder_score
 estudante_escola %>%
   group_by(escola) %>%
   mutate(desempenho_medio = mean(desempenho, na.rm = TRUE)) %>% 

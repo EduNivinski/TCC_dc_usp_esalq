@@ -61,15 +61,6 @@ db_all_19A20 <- mutate(db_all_19A20,
 # excluindo paises que não estão em ambos os anos (funciona para duplicatas)
 db_all_19A20 <- subset(db_all_19A20,duplicated(country) | duplicated(country, fromLast=TRUE))
 
-db_all_19A20_d <- db_all_19A20
-db_all_19A20_d <- mutate(db_all_19A20,
-                         efeito_covid = replace(efeito_covid, efeito_covid==
-                                                  0, "0"),
-                         efeito_covid = replace(efeito_covid, efeito_covid==
-                                                  1, "1"))
-
-summary(db_all_19A20_d)
-
 
 # quantidade de países restantes (86) 
 #unique(db_all_19A20$country)
@@ -121,32 +112,11 @@ db_all_16A20 <- merge(db_all_16A20, test)
 for (i in 1:4) {
   db_all_16A20 <- db_all_16A20[!(db_all_16A20$count_uniq==i),]
 }
+db_all_16A20
 
 
-
-# exclusão da variável cont_uniq
-db_all_16A20 <- db_all_16A20[-(7)]
-
-
-# DB para testar efeito_covid como dummy
-db_all_16A20_d <- db_all_16A20
-db_all_16A20_d <- mutate(db_all_16A20,
-                       efeito_covid = replace(efeito_covid, efeito_covid==
-                                                0, "0"),
-                       efeito_covid = replace(efeito_covid, efeito_covid==
-                                                1, "1"))
-
-summary(db_all_16A20_d)
-                                           
 # quantidade de países restantes (81) 
 #unique(db_all_16A20$country)
 
-########################################################################
-# PREPARANDO AS COLUNAS DE VARIAÇÃO DAS VARIÁVEIS DE INTERESSE         #
-########################################################################
 
-db_variance <- #coloque o DB que quer criar as variancias
 
-  
-    
-  
