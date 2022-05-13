@@ -1,7 +1,6 @@
 # Testes estatísticos
 
-test_db <- db_all_16A20_d
-  
+test_db <- df_cluster_20_f
   # Testes estatísticos
   
   
@@ -183,7 +182,7 @@ ggplotly(
 
 ggplotly(
   ggplot(test_db, aes(x = ladder_score)) +
-    geom_density(aes(color = year, fill = year), 
+    geom_density(aes(color = grupo_paises_19, fill = grupo_paises_19), 
                  position = "identity", alpha = 0.3) +
     scale_color_viridis_d() +
     scale_fill_viridis_d() +
@@ -213,7 +212,7 @@ test_db %>%
 #HETEROCEDÁSTICO NOS DADOS!
 ggplotly(
   test_db %>%
-    ggplot(aes(x = log_gdp, y = ladder_score, color = year)) +
+    ggplot(aes(x = log_gdp, y = ladder_score, color = grupo_paises_20)) +
     geom_smooth(method = "lm", formula = y ~ x, se = F) +
     geom_point() +
     guides(color = F) +
