@@ -1,6 +1,6 @@
 # Testes estatísticos
 
-test_db <- db_all_19A20_d
+test_db <- db_all_16A20_d
   
   # Testes estatísticos
   
@@ -127,12 +127,35 @@ test_db %>%
 #Estatísticas descritivas
 summary(test_db)
 
+# Explorando a correlação entre as variáveis através da função chart.correlation
+test_db %>%
+  corr_plot(3:5,
+            shape.point = 21,
+            col.point = "black",
+            fill.point = "#FDE725FF",
+            size.point = 2,
+            alpha.point = 0.6,
+            maxsize = 6,
+            minsize = 6,
+            smooth = TRUE,
+            col.smooth = "black",
+            col.sign = "#440154FF",
+            upper = "corr",
+            lower = "scatter",
+            diag.type = "density",
+            col.diag = "#440154FF",
+            pan.spacing = 0,
+            lab.position = "bl")
+
+
+
+
 #Exploração visual do ledder_score (média do bem-estar em um e outro ano)
 test_db %>%
   group_by(year) %>%
   mutate(ladder_score_medio = mean(ladder_score, na.rm = TRUE)) %>% 
   ggplot() +
-  geom_point(aes(x = year, y = ladder_score),color = "orange", alpha = 1, size = 4) +
+  geom_point(aes(x = year, y = ladder_score),color = "orange", alpha = 1, size = 3) +
   geom_line(aes(x = year, y = ladder_score_medio, 
                 group = 1, color = "ladder score medio"), size = 2) +
   scale_colour_viridis_d() +
@@ -143,7 +166,7 @@ test_db %>%
         panel.grid = element_line("grey"),
         panel.background = element_rect("white"),
         legend.position = "bottom",
-        axis.text.x = element_text(angle = 90))
+        axis.text.x = element_text(angle = 90, size = 15))
 
 #Kernel density estimation (KDE) - função densidade de probabilidade da
 #variável dependente (ladder_score), com histograma
@@ -220,7 +243,7 @@ scatter3d(ladder_score ~ log_gdp + efeito_covid,
 
 #Estimação do modelo nulo (função lme do pacote nlme)
 modelo_nulo_hlm2 <- lme(fixed = ladder_score ~ 1, 
-                        random = ~ 1 | efeito_covid,
+                        random = ~ 1 | year,
                         data = test_db,
                         method = "REML")
 
@@ -315,7 +338,7 @@ data.frame(OLS_Nulo = logLik(modelo_ols_nulo),
 ctrl <- lmeControl(opt='optim')
 modelo_intercept_inclin_hlm2 <- lme(fixed = ladder_score ~ log_gdp,
                                     random = ~ log_gdp + healthy_exp | efeito_covid,
-                                    control=ctrl,
+                                  
                                     data = test_db,
                                     method = "REML")
 
