@@ -1,6 +1,6 @@
 # Testes estatísticos
 
-test_db <- df_cluster_20_f
+test_db <- db_all_16A20_d
   # Testes estatísticos
   
   
@@ -231,6 +231,27 @@ scatter3d(ladder_score ~ log_gdp + efeito_covid,
           fit = "linear",
           surface = T)
 
+################################################################################
+#                             ESTIMAÇÃO DO MODELO OLS                          #
+################################################################################
+
+cor(test_db$log_gdp,test_db$healthy_exp)
+
+export_summs(modelo_ols, scale = F)
+
+modelo_mult <- lm(ladder_score ~ log_gdp + healthy_exp, test_db)
+summary(modelo_mult)
+
+# PROCEDIMENTO STEPWISE
+step_modelo_mult <- step(modelo_mult, k = 3.841459)
+summary(step_modelo_mult)
+export_summs(step_modelo_mult, scale = F)
+
+# teste de shapiro-Francia (verificação dos resíduos a normalidade)
+sf.test(step_modelo_mult$residuals)
+
+# diagnóstico de heterocedasticidade 
+ols_test_breusch_pagan((step_modelo_mult))
 
 
 ################################################################################
@@ -499,16 +520,11 @@ test_db %>%
   geom_smooth(aes(x = ladder_score, y = ols_fitted, color = "OLS"),
               method = "lm", se = F, formula = y ~ splines::bs(x, df = 5),
               size = 1.5) +
-  geom_smooth(aes(x = ladder_score, y= hlm2_fitted, color = "HLM2 Final"),
-              method = "lm", se = F, formula = y ~ splines::bs(x, df = 5),
-              size = 1.5) +
   geom_smooth(aes(x = ladder_score, y = ladder_score), method = "lm", 
               color = "gray44", size = 1.05,
               linetype = "longdash") +
   geom_point(aes(x = ladder_score, y = ols_fitted,
                  color = "OLS")) +
-  geom_point(aes(x = ladder_score, y = hlm2_fitted,
-                 color = "HLM2 Final"))  +
   scale_color_manual("Modelos:", 
                      values = c("deepskyblue1","darkorchid")) +
   labs(x = "ladder score", y = "Fitted Values") +
