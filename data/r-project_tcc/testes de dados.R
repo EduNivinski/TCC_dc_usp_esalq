@@ -1,6 +1,6 @@
 # Testes estatísticos
 
-test_db <- db_all_16A20_d
+test_db <- db_test
   # Testes estatísticos
   
   
@@ -128,7 +128,7 @@ summary(test_db)
 
 # Explorando a correlação entre as variáveis através da função chart.correlation
 test_db %>%
-  corr_plot(3:5,
+  corr_plot(3:6,
             shape.point = 21,
             col.point = "black",
             fill.point = "#FDE725FF",
@@ -212,7 +212,7 @@ test_db %>%
 #HETEROCEDÁSTICO NOS DADOS!
 ggplotly(
   test_db %>%
-    ggplot(aes(x = log_gdp, y = ladder_score, color = grupo_paises_20)) +
+    ggplot(aes(x = log_gdp, y = ladder_score, color = grupo_paises_19)) +
     geom_smooth(method = "lm", formula = y ~ x, se = F) +
     geom_point() +
     guides(color = F) +
@@ -222,24 +222,19 @@ ggplotly(
     theme_bw()
 )
 
-#Agora plotamos o mesmo gráfico, porém de forma tridimensional,
-#considerando modelos distintos para as diferentes escolas. Plotamos
-#apenas as 06 primeiras escolas em razão de uma limitação do algoritmo
-scatter3d(ladder_score ~ log_gdp + efeito_covid,
-          groups = factor(test_db$efeito_covid),
-          data = test_db,
-          fit = "linear",
-          surface = T)
+summary(test_db)
 
 ################################################################################
 #                             ESTIMAÇÃO DO MODELO OLS                          #
 ################################################################################
 
+summary(test_db)
+
 cor(test_db$log_gdp,test_db$healthy_exp)
 
 export_summs(modelo_ols, scale = F)
 
-modelo_mult <- lm(ladder_score ~ log_gdp + healthy_exp, test_db)
+modelo_mult <- lm(ladder_score ~ log_gdp + healthy_exp + efeito_covid, test_db)
 summary(modelo_mult)
 
 # PROCEDIMENTO STEPWISE

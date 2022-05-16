@@ -69,4 +69,13 @@ df_cluster_20_f <- mutate(df_cluster_20_f,
                           grupo_paises_20 = replace(grupo_paises_20, grupo_paises_20==3, "3"),
                           grupo_paises_20 = replace(grupo_paises_20, grupo_paises_20==4, "4"))
 
+# CRIANDO UM DF DO ANO DE 2020 MAS COM OS MESMOS GRUPOS DE 2019
+
+df_cluster_19 <- data.frame(grupo_paises_19)
+df_cluster_21_f <- cbind(db_cluster_20_pre,df_cluster_19)
+df_cluster_21_f <- mutate(df_cluster_21_f,
+                          grupo_paises_19 = replace(grupo_paises_19, grupo_paises_19==1, "1"),
+                          grupo_paises_19 = replace(grupo_paises_19, grupo_paises_19==2, "2"),
+                          grupo_paises_19 = replace(grupo_paises_19, grupo_paises_19==3, "3"),
+                          grupo_paises_19 = replace(grupo_paises_19, grupo_paises_19==4, "4"))
 
